@@ -1,5 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom:7em ;
+}
+
+body,
+html,
+#root {
+  height: 100%;
+}
+
+.todo-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.heading{
+  font-family: 'Poppins';
+}
+li {
+  text-align: initial;
 }
 
 .App-logo {
@@ -15,7 +39,6 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +58,59 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.addbtn{
+  background-color:  #24a0ed;
+  border: none;
+  padding: 1em;
+  color: white;
+  cursor: pointer;
+  margin: 0 1em;
+  font-family: "Poppins";
+}
+
+.inputTextFeild{
+  padding: .8em;
+  font-family: "Poppins";
+}
+
+.emptyText{
+  font-family: "Poppins";
+  font-style: italic;
+}
+
+.deletebtn{
+  padding: 0;
+  margin: 1em;
+  border: none;
+  background-color: rgb(177, 167, 167);
+  cursor: pointer;
+}
+.deletebtn:hover{
+  
+  background-color: rgb(157, 155, 155);
+}
+.listContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todoitem{
+  cursor: pointer;
+}
+
+.hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 40%;               
+  background-color:#c5c5c2;
+  height: 1px;
+}
+
+.checkbox{
+  margin: 0 .8em;
+  transform : scale(1.3)
 }
